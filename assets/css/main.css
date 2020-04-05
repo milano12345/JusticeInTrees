@@ -2899,7 +2899,7 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #21b2a6;
+  background-color: #098419;
   color: #c8ece9;
 }
 
@@ -3801,7 +3801,6 @@ body.is-menu-visible #menu {
 @media screen and (max-width: 736px) {
   #banner {
     padding: 7em 3em 5em 3em;
-    height: auto;
     min-height: 0;
   }
 
@@ -3810,10 +3809,6 @@ body.is-menu-visible #menu {
   }
 
   #banner br {
-    display: none;
-  }
-
-  #banner .more {
     display: none;
   }
 }
@@ -3908,21 +3903,21 @@ body.is-preload #banner:after {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-image: -ms-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -4060,21 +4055,21 @@ body.landing #page-wrapper {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-image: -ms-linear-gradient(
       top,
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/banner.jpg");
+    url("../../images/trees.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
