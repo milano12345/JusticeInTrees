@@ -4129,12 +4129,26 @@ body.is-mobile.landing #footer {
   height: 200px;
   width: 2526px;
   background: url("../../images/panorama.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   transform: translate3d(0, 0, 0);
 }
+
+.tech-slideshow1 > div {
+  height: 200px;
+  width: 2526px;
+  background: url("../../images/panorama2.jpg");
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 19s linear infinite;
+}
+
+.tech-slideshow1:hover .mover-1 {
+  opacity: 0.9;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
 .tech-slideshow .mover-1 {
   animation: moveSlideshow 19s linear infinite;
 }
