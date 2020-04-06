@@ -4152,3 +4152,7 @@ body.is-mobile.landing #footer {
     transform: translateX(-66.6666%);
   }
 }
+
+.green {
+  background: #098419;
+}
