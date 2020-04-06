@@ -4117,7 +4117,7 @@ body.is-mobile.landing #footer {
 
 /* slide 1 */
 .tech-slideshow {
-  height: 300px;
+  height: 150px;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
@@ -4131,6 +4131,7 @@ body.is-mobile.landing #footer {
   background: url("../../images/panorama.jpg");
   height: 100%;
   transform: translate3d(0, 0, 0);
+  background-size: contain;
 }
 
 .tech-slideshow .mover-1 {
@@ -4147,7 +4148,7 @@ body.is-mobile.landing #footer {
 
 /* slide 2 */
 .tech-slideshow1 {
-  height: 300px;
+  height: 150px;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
@@ -4161,6 +4162,7 @@ body.is-mobile.landing #footer {
   background: url("../../images/panorama2.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 19s linear infinite;
+  background-size: contain;
 }
 
 .tech-slideshow1:hover .mover-1 {
@@ -4174,7 +4176,7 @@ body.is-mobile.landing #footer {
 /* slide 3 */
 
 .tech-slideshow2 {
-  height: 300px;
+  height: 150px;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
@@ -4188,6 +4190,7 @@ body.is-mobile.landing #footer {
   background: url("../../images/panorama3.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 19s linear infinite;
+  background-size: contain;
 }
 
 .tech-slideshow2:hover .mover-1 {
@@ -4214,6 +4217,7 @@ body.is-mobile.landing #footer {
   background: url("../../images/panorama4.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 19s linear infinite;
+  background-size: contain;
 }
 
 .tech-slideshow3:hover .mover-1 {
