@@ -4088,24 +4088,24 @@ body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
   background-image: -moz-linear-gradient(
       top,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("../../images/trees.jpg");
+    url("../../images/job3work.jpg");
   background-image: -webkit-linear-gradient(
       top,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("../../images/trees.jpg");
+    url("../../images/job3work.jpg");
   background-image: -ms-linear-gradient(
       top,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url("../../images/trees.jpg");
-  background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/trees.jpg");
+    url("../../images/job3work.jpg");
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../images/job3work.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4115,14 +4115,14 @@ body.is-mobile.landing #footer {
   background-color: #1d242a;
 }
 
+/* slide 1 */
 .tech-slideshow {
-  height: 200px;
+  height: 300px;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  /* test */
 }
 
 .tech-slideshow > div {
@@ -4131,22 +4131,6 @@ body.is-mobile.landing #footer {
   background: url("../../images/panorama.jpg");
   height: 100%;
   transform: translate3d(0, 0, 0);
-}
-
-.tech-slideshow1 > div {
-  height: 200px;
-  width: 2526px;
-  background: url("../../images/panorama2.jpg");
-  transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 19s linear infinite;
-}
-
-.tech-slideshow1:hover .mover-1 {
-  opacity: 0.9;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
 }
 
 .tech-slideshow .mover-1 {
@@ -4161,6 +4145,86 @@ body.is-mobile.landing #footer {
   animation-play-state: paused;
 }
 
+/* slide 2 */
+.tech-slideshow1 {
+  height: 300px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow1 > div {
+  height: 100%;
+  width: 2526px;
+  background: url("../../images/panorama2.jpg");
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 19s linear infinite;
+}
+
+.tech-slideshow1:hover .mover-1 {
+  opacity: 0.9;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* slide 3 */
+
+.tech-slideshow2 {
+  height: 300px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow2 > div {
+  height: 100%;
+  width: 2526px;
+  background: url("../../images/panorama3.jpg");
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 19s linear infinite;
+}
+
+.tech-slideshow2:hover .mover-1 {
+  opacity: 0.9;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* slide 4  */
+.tech-slideshow3 {
+  height: 450px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow3 > div {
+  height: 100%;
+  width: 2526px;
+  background: url("../../images/panorama4.jpg");
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 19s linear infinite;
+}
+
+.tech-slideshow3:hover .mover-1 {
+  opacity: 0.9;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* end slide 4 */
 @keyframes moveSlideshow {
   100% {
     transform: translateX(-66.6666%);
