@@ -4137,7 +4137,7 @@ body.is-mobile.landing #footer {
 }
 
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 19s linear infinite;
+  animation: moveSlideshow 35s linear infinite;
 }
 
 .tech-slideshow:hover .mover-1 {
@@ -4163,7 +4163,7 @@ body.is-mobile.landing #footer {
   width: 2526px;
   background: url("../../images/panorama2.jpg");
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 19s linear infinite;
+  animation: moveSlideshow 35s linear infinite;
   background-size: contain;
 }
 
@@ -4191,7 +4191,7 @@ body.is-mobile.landing #footer {
   width: 2526px;
   background: url("../../images/panorama3.jpg");
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 19s linear infinite;
+  animation: moveSlideshow 35s linear infinite;
   background-size: contain;
 }
 
@@ -4218,7 +4218,7 @@ body.is-mobile.landing #footer {
   width: 2526px;
   background: url("../../images/panorama4.jpg");
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 19s linear infinite;
+  animation: moveSlideshow 35s linear infinite;
   background-size: contain;
 }
 
