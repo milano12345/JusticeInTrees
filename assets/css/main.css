@@ -241,6 +241,7 @@ a {
   border-bottom: dotted 1px;
   color: inherit;
   text-decoration: none;
+  word-wrap: break-word;
 }
 
 a:hover {
