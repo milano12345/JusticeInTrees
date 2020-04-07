@@ -2281,6 +2281,7 @@ ul.actions {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: center;
   cursor: default;
   list-style: none;
   margin-left: -1em;
@@ -4229,6 +4230,12 @@ body.is-mobile.landing #footer {
 }
 
 /* end slide 4 */
+
+.inner {
+  width: 75%;
+  margin: auto;
+}
+
 @keyframes moveSlideshow {
   100% {
     transform: translateX(-66.6666%);
