@@ -4234,7 +4234,7 @@ body.is-mobile.landing #footer {
 
 @media screen and (min-width: 800px) {
   .inner {
-    width: 75%;
+    width: 46%;
     margin: auto;
   }
 }
