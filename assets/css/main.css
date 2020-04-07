@@ -4231,9 +4231,11 @@ body.is-mobile.landing #footer {
 
 /* end slide 4 */
 
-.inner {
-  width: 75%;
-  margin: auto;
+@media screen and (min-width: 800px) {
+  .inner {
+    width: 75%;
+    margin: auto;
+  }
 }
 
 @keyframes moveSlideshow {
