@@ -1,21 +1,18 @@
 {
-  "name": "stripetest",
+  "name": "justiceintrees",
   "version": "1.0.0",
+  "description": "The Offical Website for Justice in Trees",
   "main": "index.js",
-  "repository": "https://github.com/milano12345/stripetest.git",
+  "repository": "https://github.com/milano12345/JusticeInTrees.git",
   "author": "milano12345 <dmilano857@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^3.0.1",
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "helmet": "^3.21.2",
-    "stripe": "^7.14.0"
+    "helmet": "^3.22.0",
+    "stripe": "^8.39.2"
   },
   "devDependencies": {
     "dotenv": "^8.2.0"
-  },
-  "scripts": {
-    "build": "mkdir -p public && touch public/index.html",
-    "start": "node index.js"
   }
 }
