@@ -5,24 +5,33 @@ if (process.env.NODE_ENV !== "production") {
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 const stripePublicKey = process.env.STRIPE_PUBLIC_KEY;
-
-const helmet = require("helmet")
-
+const bodyParser = require("body-parser");
+const helmet = require("helmet");
 const express = require("express");
+
 const app = express();
 const fs = require("fs");
-
-app.use(helmet())
-
+app.use(helmet());
+app.use(express.static(__dirname));
+console.log(__dirname);
+app.set("views", __dirname + "/views");
+app.engine("html", require("ejs").renderFile);
+app.set("view engine", "html");
 app.set("view engine", "ejs");
-// rnapp.set("views", path.join(__dirname, "views"));
-//app.use(express.static(path.join(__dirname, "public")));
-app.use(express.json());
-app.use(express.static("public"));
-app.listen(3000);
+
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+);
+app.use(bodyParser.json());
 
 app.get("/hello", (req, res) => {
   console.log("server is running");
+});
+
+app.get("/", function(req, res) {
+  res.render("index.html", {});
 });
 
 app.get("/store", (req, res) => {
