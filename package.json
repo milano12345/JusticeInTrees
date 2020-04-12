@@ -17,7 +17,7 @@
     "dotenv": "^8.2.0"
   },
   "scripts": {
-    "build": "index.js",
+    "build": "node index.js",
     "start": "node index.js"
   }
 }
