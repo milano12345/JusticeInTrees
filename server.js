@@ -28,13 +28,14 @@ app.use(bodyParser.json());
 
 app.get("/materials", (req, res) => {
   fs.readFile("items.json", function(error, data) {
-    // if (error) {
-    //   res.status(500).end();
-    // } else {
-    res.render("store2.ejs", {
-      items: JSON.parse(data),
-      stripePublicKey: stripePublicKey
-    });
+    if (error) {
+      res.status(500).end();
+    } else {
+      res.render("store2.ejs", {
+        items: JSON.parse(data),
+        stripePublicKey: stripePublicKey
+      });
+    }
   });
 });
 
