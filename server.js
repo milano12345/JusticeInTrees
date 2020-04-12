@@ -12,7 +12,7 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 app.use(helmet());
-app.use(express.static("public"));
+app.use(express.static(__dirname));
 console.log(__dirname);
 app.set("views", __dirname + "/views");
 app.engine("html", require("ejs").renderFile);
