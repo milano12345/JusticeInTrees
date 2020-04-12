@@ -17,7 +17,7 @@
     "dotenv": "^8.2.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "index.js",
     "start": "node index.js"
   }
 }
