@@ -7,6 +7,7 @@
   "author": "milano12345 <dmilano857@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
