@@ -18,7 +18,7 @@
     "dotenv": "^8.2.0"
   },
   "scripts": {
-    "build": "touch index.js",
+    "build": "touch server.js",
     "start": "node index.js"
   }
 }
