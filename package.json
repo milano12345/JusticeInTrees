@@ -15,10 +15,11 @@
     "stripe": "^8.39.2"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
   },
   "scripts": {
     "build": "touch server.js",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   }
 }

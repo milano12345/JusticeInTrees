@@ -26,8 +26,17 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.get("/hello", (req, res) => {
-  console.log("server is running");
+app.get("/materials", (req, res) => {
+  fs.readFile("items.json", function(error, data) {
+    if (error) {
+      res.status(500).end();
+    } else {
+      res.render("store2.ejs", {
+        items: JSON.parse(data),
+        stripePublicKey: stripePublicKey
+      });
+    }
+  });
 });
 
 app.get("/", function(req, res) {
