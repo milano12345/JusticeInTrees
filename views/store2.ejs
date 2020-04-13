@@ -55,7 +55,6 @@
                     <thead>
                         <tr>
                           <th>Item</th>
-                          <th>SKU</th>
                           <th>Unit</th>
                           <th>Price</th>
                         </tr>
@@ -64,7 +63,6 @@
                     <% items.music.forEach(function(item){ %>
                     <tr data-item-id="<%= item.id %>">
                       <td class="shop-item-title"><%= item.item%></td>
-                      <td class="shop-item-sku"><%= item.sku%></td>
                       <td class="shop-item-unit"><%= item.unit%></td>
                       <td class="shop-item-price"><%= item.price / 100 %></td>
                       <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
@@ -84,7 +82,6 @@
                     <thead>
                         <tr>
                           <th>Item</th>
-                          <th>Image</th>
                           <th>Unit</th>
                           <th>Price</th>
                         </tr>
@@ -93,7 +90,6 @@
                     <% items.riverrock.forEach(function(item){ %>
                     <tr data-item-id="<%= item.id %>">
                       <td class="shop-item-title"><%= item.name%></td>
-                      <td><%= item.imgname%></td>
                       <td><%= item.unit%></td>
                       <td class="shop-item-price"><%= item.price / 100 %></td>
                       <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
@@ -109,7 +105,6 @@
                     <thead>
                         <tr>
                           <th>Item</th>
-                          <th>SKU</th>
                           <th>Unit</th>
                           <th>Price</th>
                         </tr>
@@ -118,7 +113,6 @@
                     <% items.music.forEach(function(item){ %>
                     <tr data-item-id="<%= item.id %>">
                       <td class="shop-item-title"><%= item.item%></td>
-                      <td><%= item.sku%></td>
                       <td><%= item.unit%></td>
                       <td class="shop-item-price"><%= item.price / 100 %></td>
                       <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
