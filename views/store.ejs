@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Materials | Store</title>
-        <meta name="description" content="Buy Materials easily">
-        <link rel="stylesheet" href="../assets/css/main.css" />
+        <title>Speaker Station | Store</title>
+        <meta name="description" content="Buy Speakers For Less">
+        <link rel="stylesheet" href="styles.css" />
         <script src="https://checkout.stripe.com/checkout.js" defer></script>
         <script>
         var stripePublicKey = "<%=stripePublicKey %>"
          </script>
-        <script src="../assets/css/store.js" defer></script>
+        <script src="store.js" defer></script>
         
     </head>
     <body>
@@ -20,15 +20,15 @@
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
-            <h1 class="band-name band-name-large">Materials</h1>
+            <h1 class="band-name band-name-large">Speaker Station</h1>
         </header>
         <section class="container content-section">
-            <h2 class="section-header"> test</h2>
+            <h2 class="section-header">Speakers</h2>
             <h3 style="text-align: center;">Click the Picture to See Detailed Information</h3>
             <div class="shop-items">
                 <% items.music.forEach(function(item){ %>
                                     <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name%></span>
+                    <span class="shop-item-title"><%= item.name %></span>
                     <a href="<%= item.link %>">
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
                         </a>
@@ -42,11 +42,11 @@
 
         </section>
         <section class="container content-section">
-            <h2 class="section-header"><%= %></h2>
+            <h2 class="section-header">Cool Items</h2>
             <div class="shop-items">
-                <% items.music.forEach(function(item){ %>
+                <% items.merch.forEach(function(item){ %>
                                     <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= %></span>
+                    <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
                     <div class="shop-item-details">
                         <span class="shop-item-price">$<%= item.price / 100 %></span>

@@ -100,7 +100,7 @@ function addToCartClicked(event) {
   //var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
   var id = shopItem.dataset.itemId;
   addItemToCart(title, price, id); //imageSrc);
-  updateCartTotal();
+  updateCartTotal(event);
 }
 
 function addItemToCart(title, price, imageSrc, id) {
@@ -117,13 +117,13 @@ function addItemToCart(title, price, imageSrc, id) {
   }
   var cartRowContents = `
         <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
+            
             <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
+            <button class="btn btn-danger" type="button">X</button>
         </div>`;
   cartRow.innerHTML = cartRowContents;
   cartItems.append(cartRow);
@@ -136,7 +136,6 @@ function addItemToCart(title, price, imageSrc, id) {
 }
 
 function updateCartTotal(event) {
-  event.preventDefault();
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
   var cartRows = cartItemContainer.getElementsByClassName("cart-row");
   var total = 0;

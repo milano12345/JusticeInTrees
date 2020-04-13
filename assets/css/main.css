@@ -2523,7 +2523,7 @@ button,
   letter-spacing: 0.225em;
   line-height: 3.125em;
   max-width: 30em;
-  padding: 0 2.75em;
+  padding: 0 2em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -2628,6 +2628,11 @@ button:disabled,
   .button {
     height: 3.75em;
     line-height: 3.75em;
+  }
+  .btn-danger {
+    position: relative;
+    bottom: 40px;
+    left: 65px;
   }
 }
 
@@ -4255,12 +4260,6 @@ body.is-mobile.landing #footer {
   margin: 1em;
 }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-}
-
 .cart-row {
   display: flex;
 }
@@ -4333,6 +4332,5 @@ body.is-mobile.landing #footer {
 .btn-purchase {
   display: block;
   margin: 40px auto 80px auto;
-  font-size: 1.3em;
-  width: 35%;
+  font-size: 1em;
 }
