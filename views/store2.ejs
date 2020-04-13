@@ -72,110 +72,53 @@
                 </table>
               </div>
               <!-- table 2 -->
-              <h5>Decorative Rock</h5>
+              <h5>River Rock</h5>
               <div class="table-wrapper">
-                <table class="alt">
-                  <thead>
-                    <tr>
-                      <th>Item</th>
-                      <th>SKU</th>
-                      <th>Price</th>
-                      <th>Unit</th>
-                    </tr>
-                  </thead>
+                <table class="alt" >
+                    <thead>
+                        <tr>
+                          <th>Item</th>
+                          <th>Image</th>
+                          <th>Unit</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
                   <tbody>
-                    <tr>
-                      <td>Item One</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                      <td>Item One</td>
+                    <% items.riverrock.forEach(function(item){ %>
+                    <tr data-item-id="<%= item.id %>">
+                      <td><%= item.name%></td>
+                      <td><%= item.imgname%></td>
+                      <td><%= item.unit%></td>
+                      <td><%= item.price%></td>
                     </tr>
-                    <tr>
-                      <td>Item Two</td>
-                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                      <td>19.99</td>
-                      <td>Item One</td>
-                    </tr>
-                    <tr>
-                      <td>Item Three</td>
-                      <td>Morbi faucibus arcu accumsan lorem.</td>
-                      <td>29.99</td>
-                      <td>Item One</td>
-                    </tr>
-                    <tr>
-                      <td>Item Four</td>
-                      <td>Vitae integer tempus condimentum.</td>
-                      <td>19.99</td>
-                      <td>Item One</td>
-                    </tr>
-                    <tr>
-                      <td>Item Five</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                      <td>Item One</td>
-                    </tr>
+                    <%}) %>
                   </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="2"></td>
-                      <td>100.00</td>
-                    </tr>
-                  </tfoot>
                 </table>
               </div>
-              <!-- table 3 -->
-              <h5>Decorative Rock</h5>
+              <!-- Table 3 -->
+              <h5>Cement Mixes + Sand</h5>
               <div class="table-wrapper">
-                <table class="alt">
-                  <thead>
-                    <tr>
-                      <th>Item</th>
-                      <th>SKU</th>
-                      <th>Price</th>
-                      <th>Unit</th>
-                    </tr>
-                  </thead>
+                <table class="alt" >
+                    <thead>
+                        <tr>
+                          <th>Item</th>
+                          <th>SKU</th>
+                          <th>Unit</th>
+                          <th>Price</th>
+                        </tr>
+                      </thead>
                   <tbody>
-                    <tr>
-                      <td>Item One</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                      <td>Item One</td>
+                    <% items.music.forEach(function(item){ %>
+                    <tr data-item-id="<%= item.id %>">
+                      <td><%= item.item%></td>
+                      <td><%= item.sku%></td>
+                      <td><%= item.unit%></td>
+                      <td><%= item.price%></td>
                     </tr>
-                    <tr>
-                      <td>Item Two</td>
-                      <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                      <td>19.99</td>
-                      <td>Item One</td>
-                    </tr>
-                    <tr>
-                      <td>Item Three</td>
-                      <td>Morbi faucibus arcu accumsan lorem.</td>
-                      <td>29.99</td>
-                      <td>Item One</td>
-                    </tr>
-                    <tr>
-                      <td>Item Four</td>
-                      <td>Vitae integer tempus condimentum.</td>
-                      <td>19.99</td>
-                      <td>Item One</td>
-                    </tr>
-                    <tr>
-                      <td>Item Five</td>
-                      <td>Ante turpis integer aliquet porttitor.</td>
-                      <td>29.99</td>
-                      <td>Item One</td>
-                    </tr>
+                    <%}) %>
                   </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="2"></td>
-                      <td>100.00</td>
-                    </tr>
-                  </tfoot>
                 </table>
               </div>
-            </section>
           </div>
         </section>
       </article>
