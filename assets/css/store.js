@@ -76,6 +76,7 @@ function purchaseClicked() {
 }
 
 function removeCartItem(event) {
+  event.preventDefault;
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
@@ -136,6 +137,7 @@ function addItemToCart(title, price, imageSrc, id) {
 }
 
 function updateCartTotal(event) {
+  event.preventDefault;
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
   var cartRows = cartItemContainer.getElementsByClassName("cart-row");
   var total = 0;

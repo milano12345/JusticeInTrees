@@ -3,12 +3,12 @@
     <head>
         <title>Speaker Station | Store</title>
         <meta name="description" content="Buy Speakers For Less">
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
         <script src="https://checkout.stripe.com/checkout.js" defer></script>
         <script>
         var stripePublicKey = "<%=stripePublicKey %>"
          </script>
-        <script src="store.js" defer></script>
+        <script src="../assets/css/store.js" defer></script>
         
     </head>
     <body>
@@ -44,7 +44,7 @@
         <section class="container content-section">
             <h2 class="section-header">Cool Items</h2>
             <div class="shop-items">
-                <% items.merch.forEach(function(item){ %>
+                <% items.riverrock.forEach(function(item){ %>
                                     <div class="shop-item" data-item-id="<%= item.id %>">
                     <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
