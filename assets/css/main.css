@@ -4256,10 +4256,6 @@ body.is-mobile.landing #footer {
 
 /* Store Display Styling */
 
-.content-section {
-  margin: 1em;
-}
-
 .cart-row {
   display: flex;
 }
