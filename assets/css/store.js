@@ -82,6 +82,7 @@ function removeCartItem(event) {
 }
 
 function quantityChanged(event) {
+  event.preventDefault();
   var input = event.target;
   if (isNaN(input.value) || input.value <= 0) {
     input.value = 1;
@@ -134,7 +135,8 @@ function addItemToCart(title, price, imageSrc, id) {
     .addEventListener("change", quantityChanged);
 }
 
-function updateCartTotal() {
+function updateCartTotal(event) {
+  event.preventDefault();
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
   var cartRows = cartItemContainer.getElementsByClassName("cart-row");
   var total = 0;

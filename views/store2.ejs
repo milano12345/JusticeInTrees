@@ -74,7 +74,11 @@
                 </table>
               </div>
               <!-- table 2 -->
+              <!-- <button class="button primary"><a href="">Jump to Checkout</a></button> -->
+              <input type="button"  value="Go to Cart" onClick="document.getElementById('cart1').scrollIntoView();" />
+
               <h5>River Rock</h5>
+              
               <div class="table-wrapper">
                 <table class="alt" >
                     <thead>
@@ -88,10 +92,10 @@
                   <tbody>
                     <% items.riverrock.forEach(function(item){ %>
                     <tr data-item-id="<%= item.id %>">
-                      <td><%= item.name%></td>
+                      <td class="shop-item-title"><%= item.name%></td>
                       <td><%= item.imgname%></td>
                       <td><%= item.unit%></td>
-                      <td><%= item.price / 100 %></td>
+                      <td class="shop-item-price"><%= item.price / 100 %></td>
                       <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
                     </tr>
                     <%}) %>
@@ -113,10 +117,10 @@
                   <tbody>
                     <% items.music.forEach(function(item){ %>
                     <tr data-item-id="<%= item.id %>">
-                      <td><%= item.item%></td>
+                      <td class="shop-item-title"><%= item.item%></td>
                       <td><%= item.sku%></td>
                       <td><%= item.unit%></td>
-                      <td><%= item.price / 100 %></td>
+                      <td class="shop-item-price"><%= item.price / 100 %></td>
                       <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
                     </tr>
                     <%}) %>
@@ -129,7 +133,7 @@
 
       <!-- Shopping Cart -->
       <section class="container content-section">
-        <h2 class="section-header">CART</h2>
+        <h2 id="cart1" class="section-header">CART</h2>
         <div class="cart-row">
             <span class="cart-item cart-header cart-column">ITEM</span>
             <span class="cart-price cart-header cart-column">PRICE</span>
