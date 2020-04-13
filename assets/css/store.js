@@ -61,7 +61,8 @@ var stripeHandler = StripeCheckout.configure({
   }
 });
 
-function purchaseClicked() {
+function purchaseClicked(event) {
+  event.preventDefault();
   var priceElement = document.getElementsByClassName("cart-total-price")[0];
   var price = parseFloat(priceElement.innerText.replace("$", "")) * 100;
   stripeHandler.open({
@@ -76,14 +77,13 @@ function purchaseClicked() {
 }
 
 function removeCartItem(event) {
-  event.preventDefault;
+  event.preventDefault();
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
 }
 
 function quantityChanged(event) {
-  event.preventDefault();
   var input = event.target;
   if (isNaN(input.value) || input.value <= 0) {
     input.value = 1;
@@ -123,7 +123,7 @@ function addItemToCart(title, price, imageSrc, id) {
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
+            <input class="cart-quantity-input" onSubmit="return false" type="number" value="1">
             <button class="btn btn-danger" type="button">X</button>
         </div>`;
   cartRow.innerHTML = cartRowContents;
@@ -137,7 +137,6 @@ function addItemToCart(title, price, imageSrc, id) {
 }
 
 function updateCartTotal(event) {
-  event.preventDefault;
   var cartItemContainer = document.getElementsByClassName("cart-items")[0];
   var cartRows = cartItemContainer.getElementsByClassName("cart-row");
   var total = 0;

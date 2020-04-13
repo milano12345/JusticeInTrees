@@ -3,25 +3,34 @@
     <head>
         <title>Speaker Station | Store</title>
         <meta name="description" content="Buy Speakers For Less">
-        <link rel="stylesheet" href="../assets/css/styles.css" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
         <script src="https://checkout.stripe.com/checkout.js" defer></script>
         <script>
         var stripePublicKey = "<%=stripePublicKey %>"
          </script>
         <script src="../assets/css/store.js" defer></script>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
         
     </head>
     <body>
-        <header class="main-header">
-            <nav class="main-nav nav">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">STORE</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                </ul>
+        <header id="header">
+            <h1><a href="index.html">Justice in Trees</a></h1>
+            <nav id="nav">
+              <ul>
+                <li class="special">
+                  <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                  <div id="menu">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Order Materials/a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
             </nav>
-            <h1 class="band-name band-name-large">Speaker Station</h1>
-        </header>
+          </header>
+
         <section class="container content-section">
             <h2 class="section-header">Speakers</h2>
             <h3 style="text-align: center;">Click the Picture to See Detailed Information</h3>
@@ -38,22 +47,35 @@
                         <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
+            </div>
                 <%}) %>
 
         </section>
         <section class="container content-section">
-            <h2 class="section-header">Cool Items</h2>
+            <h2 class="section-header">Cement Mixes + Sand</h2>
             <div class="shop-items">
-                <% items.riverrock.forEach(function(item){ %>
-                                    <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name %></span>
-                        <img class="shop-item-image" src="Images/<%= item.imgName %>">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">$<%= item.price / 100 %></span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <%}) %>
+                    <div class="table-wrapper">
+                        <table class="alt" >
+                            <thead>
+                                <tr>
+                                  <th>Item</th>
+                                  <th>Unit</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                          <tbody>
+                            <% items.music.forEach(function(item){ %>
+                            <tr class="shop-item" data-item-id="<%= item.id %>">
+                              <td class="shop-item-title"><%= item.item%></td>
+                              <td><%= item.unit%></td>
+                              <td class="shop-item-price"><%= item.price / 100 %></td>
+                              <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
+                            </tr>
+                            <%}) %>
+                          </tbody>
+                        </table>
+                      </div>
+                
 
         </section>
 
@@ -72,6 +94,7 @@
             </div>
             <button class="btn btn-primary btn-purchase" type="button">PURCHASE NOW</button>
         </section>
+
         <footer class="main-footer">
             <div class="container main-footer-container">
                 <h3 class="band-name">Speaker Station</h3>
