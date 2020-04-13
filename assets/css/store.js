@@ -90,13 +90,15 @@ function quantityChanged(event) {
 }
 
 function addToCartClicked(event) {
+  alert("Item has been added to the cart!");
+  event.preventDefault();
   var button = event.target;
   var shopItem = button.parentElement.parentElement;
   var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
   var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
-  var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
+  //var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
   var id = shopItem.dataset.itemId;
-  addItemToCart(title, price, imageSrc, id);
+  addItemToCart(title, price, id); //imageSrc);
   updateCartTotal();
 }
 

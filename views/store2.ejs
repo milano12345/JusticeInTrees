@@ -47,6 +47,7 @@
             <section>
               <h4>Materials</h4>
               <hr />
+
               <!-- Table 1 -->
               <h5>Decorative Rock</h5>
               <div class="table-wrapper">
@@ -62,10 +63,11 @@
                   <tbody>
                     <% items.music.forEach(function(item){ %>
                     <tr data-item-id="<%= item.id %>">
-                      <td><%= item.item%></td>
-                      <td><%= item.sku%></td>
-                      <td><%= item.unit%></td>
-                      <td><%= item.price%></td>
+                      <td class="shop-item-title"><%= item.item%></td>
+                      <td class="shop-item-sku"><%= item.sku%></td>
+                      <td class="shop-item-unit"><%= item.unit%></td>
+                      <td class="shop-item-price"><%= item.price / 100 %></td>
+                      <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
                     </tr>
                     <%}) %>
                   </tbody>
@@ -89,7 +91,8 @@
                       <td><%= item.name%></td>
                       <td><%= item.imgname%></td>
                       <td><%= item.unit%></td>
-                      <td><%= item.price%></td>
+                      <td><%= item.price / 100 %></td>
+                      <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
                     </tr>
                     <%}) %>
                   </tbody>
@@ -113,7 +116,8 @@
                       <td><%= item.item%></td>
                       <td><%= item.sku%></td>
                       <td><%= item.unit%></td>
-                      <td><%= item.price%></td>
+                      <td><%= item.price / 100 %></td>
+                      <td><button class="btn btn-primary shop-item-button" type="button" onClick="return false">ADD TO CART</button></td>
                     </tr>
                     <%}) %>
                   </tbody>
@@ -122,6 +126,23 @@
           </div>
         </section>
       </article>
+
+      <!-- Shopping Cart -->
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE NOW</button>
+    </section>
 
       <!-- Footer -->
       <footer id="footer">

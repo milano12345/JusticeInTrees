@@ -303,7 +303,7 @@
       "name": "Crowne River",
       "price": "-",
       "imgName": "Cofee.png",
-      "unit": "Lb"
+      "unit": "-"
     },
     {
       "id": 40,
@@ -352,7 +352,7 @@
       "name": "Glacier White",
       "price": "-",
       "imgName": "Cofee.png",
-      "unit": "Lb"
+      "unit": "-"
     },
     {
       "id": 47,
