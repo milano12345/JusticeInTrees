@@ -19,6 +19,7 @@
     "nodemon": "^2.0.3"
   },
   "scripts": {
+    "go": "nodemon index.js",
     "build": "touch server.js",
     "start": "node index.js"
   }
