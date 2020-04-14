@@ -98,13 +98,16 @@ function addToCartClicked(event) {
   var shopItem = button.parentElement.parentElement;
   var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText;
   var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
+  var unit = shopItem.getElementsByClassName("shop-item-unit")[0].innerText;
   //var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
+  console.log(unit);
+  console.log(title);
   var id = shopItem.dataset.itemId;
-  addItemToCart(title, price, id); //imageSrc);
+  addItemToCart(title, price, id, unit); //imageSrc);
   updateCartTotal(event);
 }
 
-function addItemToCart(title, price, imageSrc, id) {
+function addItemToCart(title, price, id, unit) {
   var cartRow = document.createElement("div");
   cartRow.classList.add("cart-row");
   cartRow.dataset.itemId = id;
@@ -118,8 +121,8 @@ function addItemToCart(title, price, imageSrc, id) {
   }
   var cartRowContents = `
         <div class="cart-item cart-column">
-            
             <span class="cart-item-title">${title}</span>
+            <span class="cart-item-unit">${unit}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
