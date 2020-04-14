@@ -2629,11 +2629,6 @@ button:disabled,
     height: 3.75em;
     line-height: 3.75em;
   }
-  .btn-danger {
-    position: relative;
-    bottom: 40px;
-    left: 65px;
-  }
 }
 
 /* Features */
