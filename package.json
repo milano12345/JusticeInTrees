@@ -20,7 +20,7 @@
   },
   "scripts": {
     "go": "nodemon index.js",
-    "build": "touch server.js",
+    "build": "node server.js",
     "start": "node index.js"
   }
 }
