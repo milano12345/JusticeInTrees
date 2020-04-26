@@ -21,6 +21,6 @@
   "scripts": {
     "go": "nodemon index.js",
     "build": "server.js",
-    "start": "node index.js"
+    "start": "node server.js"
   }
 }
