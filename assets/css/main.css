@@ -2796,7 +2796,7 @@ button:disabled,
 }
 
 .spotlight:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.075);
+  background-color: #242b33;
 }
 
 .spotlight:nth-child(2) {
@@ -2812,7 +2812,8 @@ button:disabled,
 }
 
 .spotlight:nth-child(5) {
-  background-color: rgba(0, 0, 0, 0.375);
+  background-color: #2e3842;
+  flex-direction: row-reverse;
 }
 
 .spotlight:nth-child(6) {
@@ -2900,7 +2901,7 @@ button:disabled,
 }
 
 .wrapper.style1 {
-  background-color: #098419;
+  background-color: #246c44;
   color: #c8ece9;
 }
 
@@ -4246,7 +4247,7 @@ body.is-mobile.landing #footer {
 }
 
 .green {
-  background: #098419;
+  background: #218b54;
 }
 
 /* Store Display Styling */
