@@ -4326,3 +4326,7 @@ body.is-mobile.landing #footer {
   margin: 40px auto 80px auto;
   font-size: 1em;
 }
+
+img {
+  background: url("../../images/chainsaw.gif");
+}
