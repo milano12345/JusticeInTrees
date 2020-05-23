@@ -4131,7 +4131,7 @@ body.is-mobile.landing #footer {
 .tech-slideshow > div {
   height: 200px;
   width: 2526px;
-  background: url("../../images/panorama.jpg");
+  background: url("../../images/treepano.jpg");
   height: 100%;
   transform: translate3d(0, 0, 0);
   background-size: contain;
@@ -4162,7 +4162,7 @@ body.is-mobile.landing #footer {
 .tech-slideshow1 > div {
   height: 100%;
   width: 2526px;
-  background: url("../../images/panorama2.jpg");
+  background: url("../../images/panodone.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 35s linear infinite;
   background-size: contain;
@@ -4190,7 +4190,7 @@ body.is-mobile.landing #footer {
 .tech-slideshow2 > div {
   height: 100%;
   width: 2526px;
-  background: url("../../images/panorama3.jpg");
+  background: url("../../images/Clipboard.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 35s linear infinite;
   background-size: contain;
@@ -4206,7 +4206,7 @@ body.is-mobile.landing #footer {
 
 /* slide 4  */
 .tech-slideshow3 {
-  height: 250px;
+  height: 150px;
   max-width: 800px;
   margin: 0 auto;
   position: relative;
@@ -4217,7 +4217,7 @@ body.is-mobile.landing #footer {
 .tech-slideshow3 > div {
   height: 100%;
   width: 2526px;
-  background: url("../../images/panorama4.jpg");
+  background: url("../../images/treepano.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 35s linear infinite;
   background-size: contain;
