@@ -4138,7 +4138,7 @@ body.is-mobile.landing #footer {
 }
 
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 35s linear infinite;
+  animation: moveSlideshow 55s linear infinite;
 }
 
 .tech-slideshow:hover .mover-1 {
@@ -4164,7 +4164,7 @@ body.is-mobile.landing #footer {
   width: 2526px;
   background: url("../../images/panodone.jpg");
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 35s linear infinite;
+  animation: moveSlideshow 55s linear infinite;
   background-size: contain;
 }
 
@@ -4192,7 +4192,7 @@ body.is-mobile.landing #footer {
   width: 2526px;
   background: url("../../images/Clipboard.jpg");
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 35s linear infinite;
+  animation: moveSlideshow 55s linear infinite;
   background-size: contain;
 }
 
@@ -4219,7 +4219,7 @@ body.is-mobile.landing #footer {
   width: 2526px;
   background: url("../../images/treepano.jpg");
   transform: translate3d(0, 0, 0);
-  animation: moveSlideshow 35s linear infinite;
+  animation: moveSlideshow 55s linear infinite;
   background-size: contain;
 }
 
