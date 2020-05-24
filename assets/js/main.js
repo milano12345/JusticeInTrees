@@ -22,7 +22,6 @@
 
   // Play initial animations on page load.
   $window.on("load", function () {
-    $("#loader").animate();
     window.setTimeout(function () {
       $body.removeClass("is-preload");
     }, 100);
@@ -87,9 +86,10 @@
 var myVar;
 
 function myFunction() {
-  if (document.readyState === "complete") {
-    document.getElementById("loader").style.display = "none";
-  } else {
-    $("#loader").animate();
-  }
+  $(".loader").animate();
+  //   if (document.readyState === "complete") {
+  //     document.getElementById("loader").style.display = "none";
+  //   } else {
+  //     $("#loader").animate();
+  //   }
 }
