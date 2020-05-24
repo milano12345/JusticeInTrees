@@ -4365,7 +4365,7 @@ img {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 } */
-@-moz-keyframes spinner {
+@-moz-keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -4381,7 +4381,7 @@ img {
   }
 }
 
-@-webkit-keyframes spinner {
+@-webkit-keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -4397,7 +4397,7 @@ img {
   }
 }
 
-@-ms-keyframes spinner {
+@-ms-keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
@@ -4413,7 +4413,7 @@ img {
   }
 }
 
-@keyframes spinner {
+@keyframes spin {
   0% {
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
