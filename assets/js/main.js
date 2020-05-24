@@ -92,6 +92,6 @@ function myFunction() {
   if (document.readyState === "complete") {
     document.getElementById("loader").style.display = "none";
   } else {
-    console.log(document.readyState);
+    $("#loader").animate();
   }
 }
