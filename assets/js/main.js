@@ -22,9 +22,7 @@
 
   // Play initial animations on page load.
   $window.on("load", function () {
-    $("#loader").animate({
-      top: -200,
-    });
+    $("#loader").animate();
     window.setTimeout(function () {
       $body.removeClass("is-preload");
     }, 100);
