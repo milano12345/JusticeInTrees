@@ -23,8 +23,9 @@
   // Play initial animations on page load.
   $window.on("load", function () {
     window.setTimeout(function () {
+      //$("#banner").removeClass("is-preload");
       $body.removeClass("is-preload");
-    }, 750);
+    });
   });
 
   // Mobile?
@@ -82,14 +83,3 @@
 })(jQuery);
 
 // loader
-
-var myVar;
-
-function myFunction() {
-  $(".loader").animate();
-  //   if (document.readyState === "complete") {
-  //     document.getElementById("loader").style.display = "none";
-  //   } else {
-  //     $("#loader").animate();
-  //   }
-}
