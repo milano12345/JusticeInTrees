@@ -4332,6 +4332,23 @@ img {
 }
 
 /* loader */
+/* 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+} */
 
 #loader {
   position: absolute;
@@ -4348,6 +4365,24 @@ img {
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes spin {
@@ -4402,39 +4437,4 @@ img {
 .myDiv {
   display: none;
   text-align: center;
-}
-
-/* Tree Animation */
-
-svg {
-  display: block;
-  width: 258px;
-  height: 258px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.tree {
-  fill: green;
-}
-
-.circle-mask {
-  transform-origin: 50% 90%;
-  animation: scale 5s infinite ease-out;
-}
-
-@keyframes scale {
-  0%,
-  100% {
-    transform: scale(0);
-  }
-  7%,
-  90% {
-    transform: scale(0.4);
-  }
-  50% {
-    transform: scale(1);
-  }
 }
