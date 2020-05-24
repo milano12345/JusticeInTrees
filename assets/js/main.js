@@ -83,3 +83,13 @@
 })(jQuery);
 
 // loader
+
+var myVar;
+
+function myFunction() {
+  if (document.readyState === "complete") {
+    document.getElementById("loader").style.display = "none";
+  } else {
+    console.log("failed");
+  }
+}
