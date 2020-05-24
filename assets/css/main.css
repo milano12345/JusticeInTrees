@@ -4348,7 +4348,7 @@ img {
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-  display: block;
+  display: inline-block;
 }
 /* #loader {
   position: absolute;
