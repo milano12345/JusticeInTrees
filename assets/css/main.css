@@ -3543,7 +3543,7 @@ body.is-menu-visible #menu {
   -ms-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
   background: #2e3842;
-  height: 3em;
+  height: 3.3em;
   left: 0;
   line-height: 3em;
   position: fixed;
@@ -3573,7 +3573,7 @@ body.is-menu-visible #menu {
 
 @media screen and (max-width: 736px) {
   #header h1 a {
-    font-size: 0.8em;
+    font-size: 1.3em;
   }
 }
 
@@ -3747,7 +3747,7 @@ body.is-menu-visible #menu {
   -ms-transform: translateY(0);
   transform: translateY(0);
   border: none;
-  bottom: 0;
+  bottom: -45px;
   color: inherit;
   font-size: 0.8em;
   height: 8.5em;
@@ -4217,7 +4217,7 @@ body.is-mobile.landing #footer {
 .tech-slideshow3 > div {
   height: 100%;
   width: 2526px;
-  background: url("../../images/treepano.jpg");
+  background: url("../../images/lastpano.jpg");
   transform: translate3d(0, 0, 0);
   animation: moveSlideshow 55s linear infinite;
   background-size: contain;
