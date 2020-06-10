@@ -1,5 +1,3 @@
-const application = require("./index.js");
-
 const PORT = process.env.PORT || 3300;
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
@@ -18,7 +16,7 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 app.set("view engine", "ejs");
 
-application.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`\n=== Server listening on port ${PORT} ===\n`);
 });
 
