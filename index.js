@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const helmet = require("helmet");
 const express = require("express");
 
-const app = express();
+var app = express();
 const fs = require("fs");
 app.use(helmet());
 app.use(express.static(__dirname));
