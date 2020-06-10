@@ -1,4 +1,4 @@
-const app = require("./index.js");
+const application = require("./index.js");
 
 const PORT = process.env.PORT || 3300;
 
@@ -18,7 +18,7 @@ app.engine("html", require("ejs").renderFile);
 app.set("view engine", "html");
 app.set("view engine", "ejs");
 
-app.listen(PORT, () => {
+application.listen(PORT, () => {
   console.log(`\n=== Server listening on port ${PORT} ===\n`);
 });
 
