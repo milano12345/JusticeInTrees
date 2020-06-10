@@ -21,55 +21,39 @@ app.set("view engine", "ejs");
 
 app.use(
   bodyParser.urlencoded({
-    extended: true
+    extended: true,
   })
 );
 app.use(bodyParser.json());
 
 app.get("/materials", (req, res) => {
-  fs.readFile("items.json", function(error, data) {
+  fs.readFile("items.json", function (error, data) {
     if (error) {
       res.status(500).end();
     } else {
       res.render("store2.ejs", {
         items: JSON.parse(data),
-        stripePublicKey: stripePublicKey
+        stripePublicKey: stripePublicKey,
       });
     }
   });
 });
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.render("index.html", {});
 });
 
-app.get("/store", (req, res) => {
-  fs.readFile("items.json", function(error, data) {
-    if (error) {
-      res.status(500).end();
-    } else {
-      res.render("store.ejs", {
-        items: JSON.parse(data),
-        stripePublicKey: stripePublicKey
-      });
-    }
-  });
-});
-
 app.post("/purchase", (req, res) => {
-  fs.readFile("items.json", function(error, data) {
+  fs.readFile("items.json", function (error, data) {
     if (error) {
-      res
-        .status(500)
-        .json({ message: "error" })
-        .end();
+      res.status(500).json({ message: "error" }).end();
     } else {
       console.log("purchased");
       const itemsJson = JSON.parse(data);
       const itemsArray = itemsJson.music.concat(itemsJson.merch);
       let total = 0;
-      req.body.items.forEach(function(item) {
-        const itemJson = itemsArray.find(function(i) {
+      req.body.items.forEach(function (item) {
+        const itemJson = itemsArray.find(function (i) {
           return i.id == item.id;
         });
         total = total + itemJson.price * item.quantity;
